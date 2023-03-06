@@ -3,8 +3,13 @@ package Instruction1;
 public class Square extends Figure implements Printable {
     double a;
 
-    Square(double side) {
-        a = side;
+    Square(double a) {
+        if(a>0)
+            this.a = a;
+        else {
+            System.out.println("Error. Invalid value");
+            this.a = -1;
+        }
     }
 
     public double calculateArea() {
@@ -16,10 +21,12 @@ public class Square extends Figure implements Printable {
     }
 
     public void print() {
-        System.out.println("Square");
-        System.out.println(String.format("Side: %.2f", a));
-        System.out.println(String.format("Area: %.2f", calculateArea()));
-        System.out.println(String.format("Perimeter: %.2f", calculatePerimeter()));
+        if (this.a > 0) {
+            System.out.println("Square");
+            System.out.println(String.format("Side: %.2f", a));
+            System.out.println(String.format("Area: %.2f", calculateArea()));
+            System.out.println(String.format("Perimeter: %.2f", calculatePerimeter()));
+        }
     }
 
 }

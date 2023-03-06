@@ -61,6 +61,7 @@ public class Main {
 				System.out.println("Enter prism height");
 				double H = scanner.nextDouble();
 				Prism prism = new Prism(H, F);
+				System.out.println("================");
 				System.out.println("Prism");
 				System.out.println("Area: "+prism.calculateArea());
 				System.out.println("Volume: "+prism.calculateVolume());
@@ -102,7 +103,8 @@ public class Main {
 						break;
 					case 3:
 						Figure F = printFigure(figure, x, h, b, c);
-						buildPrism(F);
+						if(F.calculateArea() > 0 && F.calculatePerimeter() > 0)
+							buildPrism(F);
 						break;
 					case 4:
 						System.exit(1);

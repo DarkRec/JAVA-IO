@@ -3,8 +3,13 @@ package Instruction1;
 public class Circle extends Figure implements Printable {
     double r;
 
-    Circle(double radius) {
-        r = radius;
+    Circle(double r) {
+        if(r>0)
+            this.r = r;
+        else {
+            System.out.println("Error. Invalid value");
+            this.r = -1;
+        }
     }
 
     @Override
@@ -19,9 +24,11 @@ public class Circle extends Figure implements Printable {
 
     @Override
     public void print() {
-        System.out.println("Circle");
-        System.out.println(String.format("Radius: %.2f", r));
-        System.out.println(String.format("Area: %.2f", calculateArea()));
-        System.out.println(String.format("Permieter: %.2f", calculatePerimeter()));
+        if (this.r > 0) {
+            System.out.println("Circle");
+            System.out.println(String.format("Radius: %.2f", r));
+            System.out.println(String.format("Area: %.2f", calculateArea()));
+            System.out.println(String.format("Perimeter: %.2f", calculatePerimeter()));
+        }
     }
 }
