@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TestProblem1 {
     @Test
-    void chekSumOfAandB(){
+    void checkSumOfAAndB(){
         ArrayList<Integer> temp = new ArrayList<>();
         int a = 10, b = 5, c = 7, d = 2;
         temp.add(a);
@@ -17,5 +17,4 @@ public class TestProblem1 {
         Problem1 problem = new Problem1();
         assertTrue(problem.P001(temp,a+b));
     }
-
 }

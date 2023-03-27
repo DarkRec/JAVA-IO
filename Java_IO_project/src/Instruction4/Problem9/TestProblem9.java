@@ -1,19 +1,18 @@
-package Instruction4.Problem2;
+package Instruction4.Problem9;
 
 import java.util.ArrayList;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TestProblem2 {
-
+public class TestProblem9 {
     @Test
-    void checkFirstElementOfArray(){
+    void checkLargestSum(){
         ArrayList<Integer> temp = new ArrayList<>();
-        temp.add(1);
         temp.add(2);
-        temp.add(3);
         temp.add(4);
-        temp.add(5);
-        assertEquals(120,Problem2.P002(temp).get(0));
+        temp.add(6);
+        temp.add(8);
+        assertEquals(12, Problem9.P009(temp));
     }
 }
