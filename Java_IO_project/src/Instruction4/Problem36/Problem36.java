@@ -1,7 +1,6 @@
-package Instruction3.Problem36;
+package Instruction4.Problem36;
 
 import java.util.ArrayList;
-import Instruction3.Problem36.*;
 
 public class Problem36 {
     /*

@@ -1,20 +1,21 @@
-package Instruction3;
+package Instruction4;
 
-import Instruction3.Problem1.*;
-import Instruction3.Problem2.*;
-import Instruction3.Problem4.*;
-import Instruction3.Problem9.*;
-import Instruction3.Problem11.*;
-import Instruction3.Problem14.*;
-import Instruction3.Problem17.*;
-import Instruction3.Problem35.*;
-import Instruction3.Problem36.*;
-import Instruction3.Problem40.*;
-import Instruction3.Problem69.*;
-import Instruction3.Problem70.*;
-import Instruction3.Problem102.*;
-import Instruction3.Problem118.*;
-import Instruction3.Problem151.*;
+import Instruction4.Problem1.*;
+import Instruction4.Problem102.Problem102;
+import Instruction4.Problem11.Problem11;
+import Instruction4.Problem118.Problem118;
+import Instruction4.Problem14.Problem14;
+import Instruction4.Problem151.Problem151;
+import Instruction4.Problem17.Problem17;
+import Instruction4.Problem2.Problem2;
+import Instruction4.Problem35.Problem35;
+import Instruction4.Problem36.BinaryTree;
+import Instruction4.Problem36.Problem36;
+import Instruction4.Problem4.Problem4;
+import Instruction4.Problem40.Problem40;
+import Instruction4.Problem69.Problem69;
+import Instruction4.Problem70.Problem70;
+import Instruction4.Problem9.Problem9;
 
 import java.util.ArrayList;
 
@@ -23,15 +24,8 @@ public class Main
     public static void main(String[] args) {
 
         ArrayList<Integer> temp = new ArrayList<>();
-        temp.add(10);
-        temp.add(15);
-        temp.add(3);
-        temp.add(7);
-        System.out.println("\nProblem 1");
-        System.out.println(Problem1.P001(temp,17));
-        System.out.println(Problem1.P001(temp,16));
 
-
+        /*
         temp = new ArrayList<>();
         temp.add(1);
         temp.add(2);
@@ -130,6 +124,6 @@ public class Main
         char[][] tab2 = {{'B','B','W'},{'W','W','W'},{'W','W','W'},{'B','B','B'}};
         System.out.println("\nProblem 151");
         Problem151.P151(tab2,2,2,'G');
-
+    */
     }
 }
