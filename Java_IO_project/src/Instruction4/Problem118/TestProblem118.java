@@ -1,10 +1,13 @@
 package Instruction4.Problem118;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import java.util.ArrayList;
 import static org.junit.jupiter.api.Assertions.*;
 public class TestProblem118 {
     @Test
+    @Timeout(1)
     void checkSquareArray(){
         ArrayList<Integer> temp = new ArrayList<>();
         temp.add(-9);

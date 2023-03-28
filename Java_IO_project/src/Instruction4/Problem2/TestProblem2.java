@@ -2,11 +2,15 @@ package Instruction4.Problem2;
 
 import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestProblem2 {
 
     @Test
+    @Timeout(1)
     void checkFirstElementOfArray(){
         ArrayList<Integer> temp = new ArrayList<>();
         temp.add(1);

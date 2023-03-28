@@ -5,10 +5,13 @@ import Instruction4.Problem11.Problem11;
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestProblem35 {
     @Test
+    @Timeout(1)
     void checkIfProperlySorted(){
         ArrayList<String> strings = new ArrayList<>();
         strings.add("G");

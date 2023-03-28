@@ -5,10 +5,13 @@ import Instruction4.Problem14.Problem14;
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestProblem36 {
     @Test
+    @Timeout(1)
     void checkSecondLargest(){
         ArrayList<Integer> temp = new ArrayList<>();
         temp.add(2);

@@ -1,12 +1,15 @@
 package Instruction4.Problem14;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TestProblem14 {
 
     @Test
+    @Timeout(1)
     void checkIfEqualRoundedPI(){
-        assertEquals(Math.round(Math.PI), Math.round(Problem14.P014(500000)));
+        assertEquals(Math.round(Math.PI), Math.round(Problem14.P014(10000000)));
     }
 }

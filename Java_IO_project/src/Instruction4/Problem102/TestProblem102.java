@@ -2,10 +2,13 @@ package Instruction4.Problem102;
 
 import java.util.ArrayList;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TestProblem102 {
     @Test
+    @Timeout(1)
     void checkValueOfContiguousElements(){
         ArrayList<Integer> temp = new ArrayList<>();
         temp.add(1);

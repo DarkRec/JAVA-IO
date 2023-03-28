@@ -1,10 +1,13 @@
 package Instruction4.Problem151;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.Arrays;
 public class TestProblem151 {
     @Test
+    @Timeout(1)
     void checkReplacement(){
         char[][] tab = {{'B','B','W'},{'W','W','W'},{'W','W','W'},{'B','B','B'}};
         char[][] test = {{'B','B','G'},{'G','G','G'},{'G','G','G'},{'B','B','B'}};
