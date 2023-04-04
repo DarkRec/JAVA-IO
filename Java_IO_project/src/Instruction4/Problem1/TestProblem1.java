@@ -12,10 +12,10 @@ public class TestProblem1 {
     void checkSumOfAAndB(){
         ArrayList<Integer> temp = new ArrayList<>();
         int a = 10, b = 5, c = 7, d = 2;
-        temp.add(a);
-        temp.add(b);
-        temp.add(c);
-        temp.add(d);
+        temp.add(10);
+        temp.add(5);
+        temp.add(7);
+        temp.add(2);
 
         Problem1 problem = new Problem1();
         assertTrue(problem.P001(temp,a+b));

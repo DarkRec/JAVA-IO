@@ -10,7 +10,7 @@ public class Problem14 {
     static public double P014(int tests){
         try{
             if (tests<=0)
-                throw new ZeroSamplesException();
+                throw new ZeroSamplesException("0 given as number of samples");
         }
         catch(ZeroSamplesException e){
             System.out.println(e.getMessage());

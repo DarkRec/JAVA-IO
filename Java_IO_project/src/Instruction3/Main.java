@@ -65,7 +65,7 @@ public class Main
         System.out.println(Problem11.P011(strings, "de"));
 
         System.out.println("\nProblem 14");
-        System.out.println(Problem14.P014(5000000));
+        System.out.println(Problem14.P014(0));
 
         System.out.println("\nProblem 17");
         Problem17.P017("dir\\n\\tSubdir1\\n\\tSubdir2\\n\\t\\tFile.ext");
